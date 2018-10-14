@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i =1;
+        try {
+            i = i * j;  //tryの後、もしかしたらエラーを吐く文を書く（例えばこれなら、変数jは作られていないのでエラーになる）
+        } catch (e) {   //エラーだった場合吐かれるエラーメッセージを格納する変数eを設定
+            console.log(e.message); //エラーだった場合行われる処理
+        } finally {
+            console.log("処理は完了しました");  //エラーが起ころうと怒らなかろうと行われる処理
+        }
+        //"j is not defined"
+        //"処理は完了しました"
+    </script>
+</body>
+</html>

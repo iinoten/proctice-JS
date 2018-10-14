@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ラベルを使用するやつ
+        kuku : //多分これは直後の演算子、関数につくんだと思う
+        //この場合直後のfor文の状況を保存したままbreakで移動してくる
+        //continue文でもできるよ
+        //要は「本来最も内側のループを脱出なり抜け出す」はずのbreak continueの挙動を少し変化させるのがラベル
+        for (var i = 1; i < 10; i ++) {
+            for (var j = 1; j < 10; j ++){
+                var k = i * j;
+                if (k > 30) { break kuku;}
+                document.write(k + " ");
+            } 
+            document.write('<br />');   //<br>みたいなもん
+        }
+    </script>
+</body>
+</html>
