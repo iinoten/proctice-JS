@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ary = ["hoge", "huga", "foo", "baa"];
+        console.log(delete ary[0]);     //true
+        console.log(ary);       //array(4)
+
+        var numberA = 1;
+        console.log(delete numberA);    //false
+        console.log(numberA);   //"1"
+
+        numberB = 2;
+        console.log(delete numberB);    //true
+        console.log(numberB);       //""
+    </script>
+</body>
+</html>

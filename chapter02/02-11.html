@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let hoge = 'count ';
+        let count = `${hoge}
+        counted`;   //"count \ncounted"
+        //""""バッククォート"""""で特別な記法である「テンプレート文字列になる」
+        //テンプレート文字列内では、書いたまま改行されかつ${hoge}で変数が展開される
+        //そのまま文字列として代入されるので、この場合の二行目の前の空白も文字数としてカウントされるので
+        表示されるのは
+        /*
+        count 
+                counted
+        */
+        //ってなる
+        console.log(count);
+    </script>
+</body>
+</html>
