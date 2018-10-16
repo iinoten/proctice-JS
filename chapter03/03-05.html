@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "WINGSプロジェクト";
+        console.log(str.substring(5, 8));    //"プロジ"
+        //第一引数"5"、第二引数"8"で「6文字目から8文字目まで抽出となる(一文字目は０)
+
+        console.log(str.slice(5, 8));   //""
+
+        console.log(str.substring(8,5));    //"プロジ"
+        //第二引数"5"、第一引数"8"で「6文字目から8文字目まで抽出となる(一文字目は０)
+        //substringは第二引数と第一引数の文字が
+
+        console.log(str.slice(8, 5));   //""
+
+    </script>
+</body>
+</html>

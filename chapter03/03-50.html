@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pet = {
+            type: "ハムスター",
+            name: "キラ",
+            description: {
+                birth: '2014-02-15'
+            }
+        };
+
+        let pet2 = {
+            name:'山田きら',
+            color:'白',
+            description: {
+                food:'ひまわりのたね'
+            }
+        };
+        Object.assign(pet, pet2);
+        console.log(pet);
+    </script>
+</body>
+</html>

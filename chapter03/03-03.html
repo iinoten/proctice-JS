@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str01 = "にわにはにわにわとりがいる";
+        console.log(str01.indexOf('にわ')); //"0"
+        //indexOfで第二引数がなければ文字列の先頭から検索を開始、第一引数と合致した文字数目の数を返す
+        console.log(str01.lastIndexOf('にわ')); //"6"
+        //lastIndexOfでindexOfの逆みたいにいちばんうしろから検索を開始、
+        console.log(str01.indexOf('にわ', 3));  //"4"
+        //第二引数を指定することで先頭からその文字数文検索を無視して、今回だと3文字目から検索を開始する
+        console.log(str01.lastIndexOf('わ',5)); //"5"
+        console.log(str01.indexOf('ガーデン')); //"-1"
+        //検索しても引数の文字と合致するものがなかった
+    </script>
+</body>
+</html>
