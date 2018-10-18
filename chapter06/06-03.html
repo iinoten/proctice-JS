@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="https://twitter.com/">twitter</a></li>
+        <li><a href="https://www.youtube.com/">youtube</a></li>
+    </ul>
+    <form>
+        <label for="time">時刻：</label>
+        <input id="time" name="time" type="text" size="10">
+    </form>
+    <script>
+        var list = document.getElementsByTagName('a');  //aタグを検索、この後のfor文でconsole.logで出力している
+        for (var i = 0; i < list.length; i++) {
+            console.log(list[i].href);      //.hrefを抜いたら"<a href="https://www.youtube.com/">"ってそのまま出てきた
+        }
+        var current = new Date();
+        var num = document.getElementsByName("time");   //getElementで取り出されるのは配列の形になる
+        num[0].value = current.toLocaleTimeString();    //なので取り出すための形は[0]をつける
+    </script>
+</body>
+</html>

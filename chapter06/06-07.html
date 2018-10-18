@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="food">一番好きな食べ物は？</label>
+        <select id="food">
+            <option value="ラーメン">ラーメン</option>
+            <option value="餃子">餃子</option>
+            <option value="チャーハン">チャーハン</option>
+        </select>
+        <input type="submit" value="送信">
+    </form>
+    <script>
+        //selectのidを取得
+        var s = document.getElementById('food');
+        var opts = s.childNodes; //子ノードを取得、多分select配下のやつをとってきている
+        for (var i = 0;i < opts.length;i++) {
+            var opt = opts.item(i);
+            if (opt.nodeType === 1) {
+                console.log(opt.nodeValue);
+            }
+        }
+    </script>
+</body>
+</html>
