@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Title from './compornents/Title';  //読み込み
 
 class App extends Component {
   render() {
@@ -8,9 +9,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            HelloWorld
-          </p>
+          <Title title="HelloWorld3.0" titleStyle={{color:'orange'}}/>
           <a
             className="App-link"
             href="https://reactjs.org"
