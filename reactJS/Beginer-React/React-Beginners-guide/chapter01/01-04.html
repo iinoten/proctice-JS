@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div id="app">
+
+        </div>
+        <script src="../react-0.14.3/build/react.js"></script>
+        <script src="../react-0.14.3/build/react-dom.js"></script>
+        <script>
+            ReactDOM.render(
+                React.DOM.h1(
+                    {id:"my-heading"},
+                    React.DOM.span(null,    //spanをh1のなかの入れ子にしている
+                    React.DOM.em(null,"Hell"),  //emを更にspanの中の入れ子にしている
+                    "o" //これはspanに属する
+                    ),
+                    "world!"    //これはh1に属する
+                ),
+                document.getElementById("app")
+            );//"出力は「HelloWorld!」Hellが斜め文字になっている"
+        </script>
+</body>
+</html>
